@@ -175,6 +175,8 @@ h6 {
 
 .main__top {
     padding: 200px 0;
+    max-width: 1600px;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
@@ -182,7 +184,7 @@ h6 {
     flex-direction: column;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header.jpg);
-    max-width: 1600px;
+
 
 }
 
@@ -477,8 +479,13 @@ h6 {
     color: #ffffff;
 }
 
+.footer__social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .footer__social-icon {
     fill: currentColor;
+
 }
 
 .footer__social-link:hover,
@@ -523,6 +530,8 @@ h6 {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--blue-color);
+    color: #ffffff;
 }
 
 .portfolio__btn--active {
@@ -548,8 +557,12 @@ h6 {
     transition: var(--transition-effekt);
 }
 
-.portfolio__item-project:hover,
-.portfolio__item-project:focus {
+.portfolio__link-project {
+    display: inline-block;
+}
+
+.portfolio__link-project:hover,
+.portfolio__link-project:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
